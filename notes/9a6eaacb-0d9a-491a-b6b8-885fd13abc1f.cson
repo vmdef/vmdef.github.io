@@ -1,0 +1,23 @@
+createdAt: "2018-11-15T09:14:12.417Z"
+updatedAt: "2018-11-15T09:19:02.753Z"
+type: "MARKDOWN_NOTE"
+folder: "81df0d9d3066ad50d2ea"
+title: "MDL-63696: peer review"
+content: '''
+  # MDL-63696: peer review
+  
+  ## Testing instructions
+  - typo: to -> two
+  - use [OAuth 2 services - MoodleDocs](https://docs.moodle.org/36/en/OAuth_2_services) and [OAuth 2 Nextcloud service - MoodleDocs](https://docs.moodle.org/36/en/OAuth_2_Nextcloud_service) documentation.
+    - alteranatively used [[MDL-58943] Create Nextcloud integration, similar to G-Suite and Office - Moodle Tracker](https://tracker.moodle.org/browse/MDL-58943) for configuring the issuer.
+  
+  ## Personal notes
+  - Create a nextcloud instance, [Nextcloud](https://demo.nextcloud.com/moodlevmdef/).
+  - Set up for using Moodle.
+'''
+tags: [
+  "peer_review"
+  "nextcloud"
+]
+isStarred: false
+isTrashed: false

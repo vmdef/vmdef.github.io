@@ -1,0 +1,37 @@
+createdAt: "2018-11-06T12:29:30.703Z"
+updatedAt: "2018-11-07T00:59:29.953Z"
+type: "MARKDOWN_NOTE"
+folder: "81df0d9d3066ad50d2ea"
+title: "MDLQA-12602"
+content: '''
+  # MDLQA-12602
+  
+  Needs Oracle database. Use docker containers for Moodle Developers [1].
+  
+  Follow the instructions in [1] using custom path.
+  ```bash
+  # Set up path to Moodle code
+  export MOODLE_DOCKER_WWWROOT=/Users/vmdef/Sites/moodles/mdlqa12602/moodle
+  # Choose a db server (Currently supported: pgsql, mariadb, mysql, mssql, oracle)
+  export MOODLE_DOCKER_DB=oracle
+  ```
+  
+  Installing from command line I got an error:
+  ```bash
+  # Initialize Moodle database for manual testing
+  bin/moodle-docker-compose exec webserver php admin/cli/install_database.php --agree-license --fullname="Docker moodle" --shortname="docker_moodle" --adminpass="test" --adminemail="admin@example.com"
+  ```
+  There is a closed issue about it ([Unable to install Moodle on Oracle via CLI - only via web · Issue #72 · moodlehq/moodle-docker · GitHub](https://github.com/moodlehq/moodle-docker/issues/72)).
+  
+  I could install via web (http://localhost:8000).
+  
+  Tested following testing instructions. Nothing to note.
+  
+  Links:
+  [1]: [GitHub - moodlehq/moodle-docker: A docker environment for moodle developers](https://github.com/moodlehq/moodle-docker)
+'''
+tags: [
+  "Moodle_QA"
+]
+isStarred: false
+isTrashed: false
